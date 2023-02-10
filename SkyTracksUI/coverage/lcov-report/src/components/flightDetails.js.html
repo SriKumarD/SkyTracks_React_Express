@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/flightDetails.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/components</a> flightDetails.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from "react";
+import CreateBooking from './CreateBooking';
+import "../App.css";
+import GetFlights from './GetFlights';
+&nbsp;
+export default class FlightDetails extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            flightData:this.props.flightData,
+            availableFlights: this.props.availableFlights,
+            bookingDetails:null,
+            errorMessage:"",
+            
+        }
+    }
+    setBookingDetails = <span class="fstat-no" title="function not covered" >(f</span>lightId, flightTime, fare) =&gt;{
+<span class="cstat-no" title="statement not covered" >        this.setState({</span>
+            bookingDetails: {
+                origin: this.state.flightData.origin,
+                destination: this.state.flightData.destination,
+                departureDate: this.state.flightData.departureDate,
+                noOfTickets: this.state.flightData.noOfTickets,
+                flightId: flightId,
+                timing: flightTime,
+                charges: Number(fare) * Number(this.state.flightData.noOfTickets)
+            }
+        })
+    }
+    render(){
+        <span class="missing-if-branch" title="if path not taken" >I</span>if(this.state.availableFlights==null){
+            // Display the GetFlights page by rendering the GetFlights component
+<span class="cstat-no" title="statement not covered" >            return &lt;GetFlights&gt;&lt;/GetFlights&gt;</span>
+        }
+        else <span class="missing-if-branch" title="if path not taken" >I</span>if(this.state.bookingDetails!=null){
+            // Display the CreateBooking page by rendering the CreateBooking component and pass the bookingDetails as props
+<span class="cstat-no" title="statement not covered" >            return &lt;CreateBooking bookingDetails={this.state.bookingDetails}&gt;&lt;/CreateBooking&gt;</span>
+        } else{
+            return(
+                &lt;React.Fragment&gt;
+                &lt;div className="container mt-5"&gt;
+                    &lt;div className="row"&gt;
+                        &lt;div className="card custom-card bg-card text-light"&gt;
+                            &lt;div className="card-body"&gt;
+                                &lt;div className="row text-center"&gt;
+                                    &lt;div className="col-md-4"&gt;
+                                        &lt;h4&gt;{this.state.flightData.departureDate}&lt;/h4&gt;
+                                        &lt;div className="text-custom"&gt;Departure Date&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div className="col-md-4"&gt;
+                                        &lt;h4&gt;{this.state.flightData.origin} - {this.state.flightData.destination}&lt;/h4&gt;
+                                        &lt;div className="text-custom"&gt;Origin - Destination&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div className="col-md-4"&gt;
+                                        &lt;h4&gt;{this.state.flightData.noOfTickets} Adult(s)&lt;/h4&gt;
+                                        &lt;div className="text-custom"&gt;Passengers&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div className="mt-5"&gt;
+                        &lt;div className="float-right"&gt;
+                            {/* Add proper event handlers to the back button */}
+                            &lt;button name="goBack" className="btn btn-warning" onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; { <span class="cstat-no" title="statement not covered" >this.setState({ availableFlights: null }) </span>}}&gt;Go Back&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;h2&gt;Available Flights:&lt;/h2&gt;
+                        {/* iterate over the available flights and display them in cards here */
+                            this.state.availableFlights.flightIds.map((data,key)=&gt;{
+                                return (&lt;div className="row mt-2 mb-2" key={data}&gt;
+                                &lt;div className="card custom-card bg-card text-light"&gt;
+                                    &lt;div className="card-body"&gt;
+                                        &lt;div className="row text-center"&gt;
+                                            &lt;div className="col-md-3"&gt;
+                                                &lt;h4&gt;{this.state.availableFlights.flightTimings[key]}&lt;/h4&gt;
+                                                &lt;div className="text-custom"&gt;Non Stop&lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div className="col-md-3"&gt;
+                                                &lt;h4&gt;{data}&lt;/h4&gt;
+                                                &lt;div className="text-custom"&gt;FLightID&lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div className="col-md-3"&gt;
+                                                &lt;h4&gt;&amp;#8377;{this.state.availableFlights.prices[key]}&lt;/h4&gt;
+                                                &lt;div className="text-custom"&gt;Fare per seat&lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div className="col-md-3"&gt;
+                                                &lt;h4&gt; &amp;#8377;{this.state.availableFlights.prices[key] * this.state.flightData.noOfTickets}&lt;/h4&gt;
+                                                &lt;button className="btn btn-primary" onClick={<span class="fstat-no" title="function not covered" >()</span>=&gt;{<span class="cstat-no" title="statement not covered" >this.setBookingDetails(data,this.state.availableFlights.flightTimings[key],this.state.availableFlights.prices[key])}</span>} name="addPassenger"&gt;Add Passenger Details&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;)
+                            })
+                        }
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/React.Fragment&gt;
+            )
+        }
+    }
+&nbsp;
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Aug 03 2020 12:05:03 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>
